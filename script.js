@@ -68,17 +68,17 @@ function checkWinner() {
 
     for (let i = 0; i < winConditions.length; i++) {
 
-        const condition = winConditions[i]; //representa a linha da tabela
-        const cellA = options[condition[0]]; //representa o primeiro índice do array (0 de 0, 1, 2)
-        const cellB = options[condition[1]]; //representa o segundo (3, 4, 5)
-        const cellC = options[condition[2]]; //representa o terceiro (6, 7, 8)
+        const condition = winConditions[i];
+        const cellA = options[condition[0]];
+        const cellB = options[condition[1]];
+        const cellC = options[condition[2]];
 
         if (cellA == "" || cellB == "" || cellC == "") {
 
             continue;
         }
 
-        if (cellA == cellB && cellB == cellC) { //o = se refere ao X ou O e não aos números do array de winConditions
+        if (cellA == cellB && cellB == cellC) {
 
             roundWon = true;
 
