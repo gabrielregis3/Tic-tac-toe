@@ -1,0 +1,67 @@
+.cell {
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#gameContainer {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.btn-outline {
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    padding: 8px 16px;
+    border: 0.2em solid;
+    border-radius: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: pointer;
+    line-height: inherit;
+    font-size: 1.25rem;
+    position: relative;
+    outline: none;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+.btn-blue,
+.btn-blue:focus,
+.btn-blue:active {
+    border-color: #4169E1;
+    color: #4169E1;
+
+    i {
+        color: #4169E1;
+    }
+}
+
+.btn-blue:hover {
+    border-color: white;
+    color: white;
+
+    i {
+        color: white;
+    }
+
+    background-color: #4169E1;
+}
